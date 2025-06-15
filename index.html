@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campestre Arquitetura</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -16,7 +13,7 @@
         }
 
         body {
-            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
             background-color: #eae1d2;
             color: #3e2f28;
             min-height: 100vh;
@@ -39,22 +36,15 @@
             animation: fadeInUp 1s ease-out forwards;
         }
 
-        .logo img {
-            width: 280px;
-            height: 120px;
+        .logo svg {
+            width: 200px;
+            height: auto;
             max-width: 100%;
-            background-color: #3e2f28;
-            padding: 15px 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(62, 47, 40, 0.15);
-            object-fit: cover;
-            object-position: center;
         }
 
         .company-name {
-            font-family: 'Quicksand', sans-serif;
             font-size: 2.5rem;
-            font-weight: 400;
+            font-weight: 300;
             color: #3e2f28;
             margin: 20px 0 10px 0;
             letter-spacing: 2px;
@@ -63,9 +53,8 @@
         }
 
         .tagline {
-            font-family: 'Quicksand', sans-serif;
             font-size: 0.9rem;
-            font-weight: 500;
+            font-weight: 400;
             color: #6b7050;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -134,7 +123,7 @@
             }
         }
 
-            @media (max-width: 768px) {
+        @media (max-width: 768px) {
             .company-name {
                 font-size: 2rem;
             }
@@ -151,12 +140,6 @@
             .social-btn {
                 width: 100%;
                 max-width: 250px;
-            }
-            
-            .logo img {
-                width: 200px;
-                height: 80px;
-                padding: 10px 15px;
             }
         }
 
@@ -178,7 +161,43 @@
 <body>
     <div class="container">
         <div class="logo">
-            <img src="images/logo_2.png" alt="Campestre Arquitetura Logo">
+            <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                <!-- Leaf -->
+                <path d="M50 80 Q50 40, 90 40 Q130 40, 130 80 Q130 120, 90 120 Q50 120, 50 80 Z" 
+                      fill="none" 
+                      stroke="#6b7050" 
+                      stroke-width="2"/>
+                
+                <!-- Leaf veins -->
+                <path d="M90 40 L90 120 M70 60 Q90 65, 110 60 M70 100 Q90 95, 110 100" 
+                      fill="none" 
+                      stroke="#6b7050" 
+                      stroke-width="1"/>
+                
+                <!-- House -->
+                <path d="M140 120 L140 80 L170 50 L200 80 L200 120 Z" 
+                      fill="none" 
+                      stroke="#3e2f28" 
+                      stroke-width="2"/>
+                
+                <!-- Roof -->
+                <path d="M135 80 L170 45 L205 80" 
+                      fill="none" 
+                      stroke="#3e2f28" 
+                      stroke-width="2"/>
+                
+                <!-- Door -->
+                <path d="M175 120 L175 95 Q175 90, 180 90 Q185 90, 185 95 L185 120" 
+                      fill="none" 
+                      stroke="#3e2f28" 
+                      stroke-width="2"/>
+                
+                <!-- Window -->
+                <rect x="150" y="95" width="15" height="15" 
+                      fill="none" 
+                      stroke="#3e2f28" 
+                      stroke-width="1.5"/>
+            </svg>
         </div>
         
         <h1 class="company-name">Campestre</h1>
